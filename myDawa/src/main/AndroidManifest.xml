@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jesi.apps.mydawa"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="MobiDawa"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jesi.apps.mydawa.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.jesi.apps.mydawa.DrugPageActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Drug Criteria"
+            android:parentActivityName="com.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name=".DashboardActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.jesi.apps.mydawa.FeedbackPageActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Feedback"
+            android:parentActivityName="com.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.jesi.apps.mydawa.ResultsPageActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Results"
+            android:parentActivityName="com.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.jesi.apps.mydawa.TrackPageActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Set Reminder"
+            android:parentActivityName="ccom.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.jesi.apps.mydawa.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Me"
+            android:parentActivityName="com.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.jesi.apps.mydawa.CalendarActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="My Calendar"
+            android:parentActivityName="com.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.jesi.apps.mydawa.PrescriptionActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="My Prescriptions"
+            android:parentActivityName="com.jesi.apps.mydawa.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jesi.apps.mydawa.MainActivity" />
+        </activity>
+        
+        <receiver android:name="com.jesi.apps.mydawa.services.InternetReceiver" >
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service 
+            android:name="com.jesi.apps.mydawa.services.DataService"
+            android:exported="false" />
+    </application>
+
+</manifest>

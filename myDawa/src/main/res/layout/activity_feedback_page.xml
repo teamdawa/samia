@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffde00"
+        android:padding ="10dip"
+        tools:context="com.jesi.apps.mydawa.FeedbackPageActivity"
+        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" >
+        
+        <TextView
+            android:id="@+id/lblFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:text="FEEDBACK"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/lblGetWell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblFeedback"
+            android:layout_below="@+id/lblFeedback"
+            android:layout_marginTop="25dp"
+            android:text="Did You Get Well"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <SeekBar
+            android:id="@+id/seekFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblGetWell"
+            android:layout_below="@+id/lblGetWell"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:id="@+id/lblExperienceComplications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekFeedback"
+            android:layout_below="@+id/seekFeedback"
+            android:layout_marginTop="32dp"
+            android:text="Experience Complications"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/chkBoxExYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblExperienceComplications"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="Yes" />
+
+        <CheckBox
+            android:id="@+id/chkBoxExNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxExYes"
+            android:layout_below="@+id/chkBoxExYes"
+            android:text="No" />
+
+        <TextView
+            android:id="@+id/lblWillYouUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblExperienceComplications"
+            android:layout_below="@+id/chkBoxExNo"
+            android:layout_marginTop="23dp"
+            android:text="Will You Use The Drug Again"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/chkBoxUseYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxExNo"
+            android:layout_below="@+id/lblWillYouUse"
+            android:layout_marginTop="15dp"
+            android:text="Yes" />
+
+        <CheckBox
+            android:id="@+id/chkBoxUseNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chkBoxUseYes"
+            android:layout_below="@+id/chkBoxUseYes"
+            android:text="No" />
+
+        <Button
+            android:id="@+id/btnFeedbackOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/seekFeedback"
+            android:layout_below="@+id/chkBoxUseNo"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/button_background"
+            android:text="Ok" />
+        
+  	</RelativeLayout>
+</ScrollView>

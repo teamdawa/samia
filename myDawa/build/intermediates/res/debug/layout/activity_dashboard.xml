@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffde00"
+    android:fillViewport="true"
+    tools:ignore="ContentDescription,RtlHardcoded" >
+
+    <RelativeLayout        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffde00"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn_n_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_n_search"
+            android:layout_below="@+id/btn_n_search"
+            android:layout_marginTop="36dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/profile"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dip" />
+
+        <ImageButton
+            android:id="@+id/btn_n_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_n_profile"
+            android:layout_marginRight="35dip"
+            android:background="@android:color/transparent"
+            android:src="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/img_home_header"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/home_header" />
+
+        <ImageButton
+            android:id="@+id/btn_n_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/img_home_header"
+            android:layout_below="@+id/img_home_header"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/search"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dip" />
+
+        <ImageButton
+            android:id="@+id/btn_n_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_n_calendar"
+            android:layout_alignTop="@+id/btn_n_search"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_history" />
+
+    </RelativeLayout>
+
+</ScrollView><!-- From: file:/C:/Users/Odede/StudioProjects/mobidawa/myDawa/src/main/res/layout/activity_dashboard.xml -->

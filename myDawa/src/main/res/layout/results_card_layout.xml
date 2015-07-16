@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtresultname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffde00"
+            android:gravity="center_vertical"
+            android:text="Result Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:ignore="HardcodedText"
+            android:padding="5dip" />
+
+        <TextView
+            android:id="@+id/txtresultdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtresultname"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Drug Dosage"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginStart="5dp"
+            android:padding="5dip" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffde00"
+        tools:context="com.jesi.apps.mydawa.MainActivity"
+        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" >
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="60dip"
+            android:layout_height="150dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="40dip" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtSearchDawa"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_below="@+id/imgLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_background"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:ems="10"
+            android:hint="Enter Name of Drug"
+            android:inputType="text"
+            android:dropDownListViewStyle="@style/MyListViewStyle" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txtSearchDawa"
+            android:layout_below="@+id/txtSearchDawa"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_background"
+            android:padding="10dip"
+            android:text="SEARCH" />
+    </RelativeLayout>
+
+</ScrollView>

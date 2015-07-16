@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffde00"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,UselessParent" >
+
+    <RelativeLayout
+        android:id="@+id/prescriptionsheader"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#ffde66" >
+
+        <ImageView
+            android:id="@+id/actionAddPresc"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/addpresc"
+            android:padding="5dip" />
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Odede/StudioProjects/mobidawa/myDawa/src/main/res/layout/activity_prescription.xml -->
